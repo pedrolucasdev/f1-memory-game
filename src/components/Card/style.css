@@ -1,0 +1,53 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  border: 1px solid #8d8a8a;
+  height: 150px;
+  width: 140px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card .front {
+  position: absolute;
+  transform: rotateY(90deg);
+  width: 100%;
+  height: 100%;
+  transition: all ease-out 0.2s;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+  background-position: center;
+  background-size: cover;
+}
+
+.card .back {
+  transition: all ease-out 0.2s;
+  transition-delay: 0.2s;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.flipped .back {
+  transform: rotateY("90deg");
+  transition-delay: 0s;
+}
