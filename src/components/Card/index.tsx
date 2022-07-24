@@ -29,7 +29,10 @@ function Card(props: CardProps) {
           <div
             className="front"
             style={{
-              backgroundImage: "url(/images/" + driver.name + ".jpg)",
+              backgroundImage:
+                "url(https://pedrolucasdev.github.io/f1-memory-game/images/" +
+                driver.name +
+                ".jpg)",
             }}
           ></div>
           <div
