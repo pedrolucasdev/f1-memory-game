@@ -88,31 +88,38 @@ function App() {
 
   return (
     <div className="App">
-      <div className="title">F1 Memory Game</div>
-      <div className="header-wrapper">
-        <button className="new-game" onClick={() => setInitialDriversSet(true)}>
-          New Game
-        </button>
-        <div className="turns">{turns} turns</div>
-      </div>
-      <div className="game__container">
-        {drivers.map((driver: DriverCard, index: number) => {
-          return (
-            <Card
-              disabled={disabled}
-              driver={driver}
-              index={index}
-              handleChoice={handleChoice}
-              key={index}
-              flipped={
-                (index === choiceOne ||
-                  index === choiceTwo ||
-                  driver.matched) &&
-                !initingGame
-              }
-            ></Card>
-          );
-        })}
+      <div className="game__container__wrapper">
+        <div className="header">
+          <div className="title">F1 Memory Game</div>
+          <div className="header-wrapper">
+            <button
+              className="new-game"
+              onClick={() => setInitialDriversSet(true)}
+            >
+              New Game
+            </button>
+            <div className="turns">{turns} moves</div>
+          </div>
+        </div>
+        <div className="game__container">
+          {drivers.map((driver: DriverCard, index: number) => {
+            return (
+              <Card
+                disabled={disabled}
+                driver={driver}
+                index={index}
+                handleChoice={handleChoice}
+                key={index}
+                flipped={
+                  (index === choiceOne ||
+                    index === choiceTwo ||
+                    driver.matched) &&
+                  !initingGame
+                }
+              ></Card>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

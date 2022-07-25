@@ -1,10 +1,10 @@
 body {
   margin: 0;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Kanit", sans-serif;
 }
 
 button {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Kanit", sans-serif;
 }
 
 .App {
@@ -23,19 +23,30 @@ button {
   grid-gap: 20px;
 }
 
+.game__container__wrapper {
+  display: flex;
+  flex-direction: column;
+  background: #c30b0b;
+  padding: 32px 64px;
+  border-radius: 16px;
+}
+
 .title {
-  font-size: 1.6rem;
+  width: 300px;
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: white;
-  font-weight: 400;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 
 .new-game {
   background: transparent;
   padding: 0 16px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
-  border: 1px solid #8d8a8a;
+  border: 1px solid white;
   color: white;
   height: 36px;
   display: flex;
@@ -46,21 +57,31 @@ button {
 }
 
 .new-game:hover {
-  background: #484848;
+  background: #8b1515;
   cursor: pointer;
 }
 
 .header-wrapper {
-  margin: 2rem 0;
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .turns {
   color: white;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 400;
   margin-left: 16px;
+  width: 80px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #e3d5d5;
+  margin-bottom: 32px;
+  padding: 16px 0;
 }
