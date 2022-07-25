@@ -98,7 +98,9 @@ function App() {
             >
               New Game
             </button>
-            <div className="turns">{turns} moves</div>
+            <div className="turns">
+              {turns} {turns === 1 ? "move" : "moves"}
+            </div>
           </div>
         </div>
         <div className="game__container">
