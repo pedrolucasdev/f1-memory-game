@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/f1-memory-game/static/css/main.91108620.css",
-    "main.js": "/f1-memory-game/static/js/main.8088a959.js",
+    "main.js": "/f1-memory-game/static/js/main.d1e561ac.js",
     "static/js/787.5d60522e.chunk.js": "/f1-memory-game/static/js/787.5d60522e.chunk.js",
     "index.html": "/f1-memory-game/index.html",
     "main.91108620.css.map": "/f1-memory-game/static/css/main.91108620.css.map",
-    "main.8088a959.js.map": "/f1-memory-game/static/js/main.8088a959.js.map",
+    "main.d1e561ac.js.map": "/f1-memory-game/static/js/main.d1e561ac.js.map",
     "787.5d60522e.chunk.js.map": "/f1-memory-game/static/js/787.5d60522e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.91108620.css",
-    "static/js/main.8088a959.js"
+    "static/js/main.d1e561ac.js"
   ]
 }
