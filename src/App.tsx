@@ -34,8 +34,8 @@ function App() {
 
     if (drivers[choiceOne].name === drivers[choiceTwo].name) {
       setDrivers((previousDrivers: DriverCard[]) => {
-        return previousDrivers.map((driver) => {
-          if (drivers[choiceOne].name == driver.name) {
+        return previousDrivers.map((driver, index) => {
+          if (index === choiceOne || index === choiceTwo) {
             return { ...driver, matched: true };
           }
           return driver;
@@ -52,9 +52,11 @@ function App() {
   }, []);
 
   const handleChoice = (cardIndex: number) => {
-    choiceOne === -1 ? setChoiceOne(cardIndex) : setChoiceTwo(cardIndex);
-    console.log(choiceOne);
-    console.log(choiceTwo);
+    if (choiceOne === -1) {
+      setChoiceOne(cardIndex);
+    } else if (cardIndex !== choiceOne) {
+      setChoiceTwo(cardIndex);
+    }
   };
 
   const resetTurn = () => {

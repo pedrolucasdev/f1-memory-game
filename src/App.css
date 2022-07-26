@@ -10,11 +10,17 @@ button {
 .App {
   background: #0e0e0e;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100vh;
+}
+
+@media only screen and (max-width: 850px) {
+  .App {
+    min-width: 1200px;
+    height: auto !important;
+  }
 }
 
 .game__container {
